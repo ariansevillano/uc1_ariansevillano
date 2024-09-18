@@ -21,6 +21,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135"
+        tools:layout_editor_absoluteX="51dp" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -32,8 +41,8 @@
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="199dp"
-        android:layout_height="39dp"
+        android:layout_width="174dp"
+        android:layout_height="42dp"
         android:layout_marginTop="24dp"
         android:allowUndo="true"
         android:background="@drawable/edit_text_background"
@@ -49,8 +58,9 @@
         android:id="@+id/editTextText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_text_background"
         android:ems="10"
         android:hint="Apellido"
         android:inputType="text"
@@ -67,6 +77,7 @@
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_text_background"
         android:ems="10"
         android:hint="Número de celular o correo electrónico"
         android:inputType="text"
@@ -80,9 +91,10 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="174dp"
+        android:layout_height="42dp"
         android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_background"
         android:ems="10"
         android:hint="Contraseña nueva"
         android:inputType="textPassword"
@@ -94,9 +106,9 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:text="Fecha de nacimiento"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
@@ -104,41 +116,31 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:text="Género"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/editTextDate"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Es posible que las personas que usan nuestro servicio hayan subido tu información de contacto Facebook."
-        android:textSize="8sp"
-        app:layout_constraintStart_toStartOf="@+id/editTextText4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Registrarse"
         android:textColorLink="#4CAF50"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.129" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
         android:id="@+id/editTextDate"
-        android:layout_width="171dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="30dp"
-        android:ems="10"
+        android:layout_width="174dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="15"
+        android:hint="Ejemplo: 17/08/2000"
         android:inputType="date"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView4"
@@ -146,14 +148,29 @@
 
     <EditText
         android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:ems="10"
+        android:layout_width="174dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="15"
+        android:hint="Ingrese su género"
         android:inputType="text"
-        android:text="Name"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    aL
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="44dp"
+        android:text="Es posible que las personas que usan nuestro servicio hayan subido tu información de contacto Facebook. Más información."
+        app:layout_constraintEnd_toEndOf="@+id/editTextText4"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="@+id/editTextText4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
